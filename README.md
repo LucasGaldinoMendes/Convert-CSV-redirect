@@ -1,6 +1,8 @@
-# Conversor de redirecionamentos de URLs em planilhas (formato .csv) para redirecionamentos em servidores apache e nginx (arquivos .htaccess ou .conf)
+# Conversor de planilhas em regras de redirecionamento
 
 Os scripts foram criados para automatizar a criação de redirecionamentos com base em planilhas, tarefa que é comum em hospedagem de sites, onde os clientes solicitam redirecionamentos de diversas URLs.
+
+O script funciona para planilhas em formato .csv criando redirecionamentos para servidores apache ou nginx
 
 # Como utilizar
 
@@ -21,5 +23,6 @@ Os scripts foram criados para automatizar a criação de redirecionamentos com b
 
 - O arquivo planilha.csv pode ser utilizado como modelo de planilha e pode ser utilizado para testar a conversão.
 - Na planilha a coluna "De" está na coluna 2 e "Para" na coluna 3, caso sua planilha seja utilizado outras colunas, basta ajustar a coluna correta nas variáveis `$oldUrl` e `$newUrl`.
-  
+- Para conversões em servidores apache, utilizar o script `convert_csv_htaccess.sh`
+- Para conversões em servidores nginx, utilizar o script `convert_csv_nginx.sh`  
 
